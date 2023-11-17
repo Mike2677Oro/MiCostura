@@ -1,0 +1,293 @@
+body {
+  overflow-x: hidden;
+  background: #f3f1f0;
+}
+
+header h1{
+  width: 100%;
+  color: #FFFDFC;
+  background: #9A867B;
+  text-align: center;
+}
+header img{
+  position: relative;
+  left: 38%;
+}
+
+.carrusel{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  max-width: 100%;
+  overflow-y: clip;
+}
+
+.carrusel-items {
+  flex: 1 0 auto;
+  margin: 0;
+  width: 300px;
+  height: 250px;
+
+}
+
+.carrusel::-webkit-scrollbar {
+  background: #9A867B;
+}
+
+
+.navBar {
+  align-items: center;
+  display: flex;
+  margin-right: 30%;
+  background: #9A867B;
+  width: 100%
+}
+
+.navBar a {
+  display: flex;
+  padding: 20px;
+  color:#FFFDFC;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 20px;
+  position: relative;
+  left: 25%;
+  border-radius: 20px;
+
+}
+
+.navBar a:hover {
+  background: rgba(255, 255, 255, 0.142);
+}
+
+
+.nuestra-mision {
+  position: relative;
+  left: 50%;
+  top: 40%;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+
+.logo img {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+
+}
+
+.log-tit {
+  background: #9A867B;
+}
+
+#titulo {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+  left: 26%;
+  bottom: 30px;
+  color: black;
+
+
+}
+
+.contLabel {
+  display: grid;
+  grid-template-columns: 700px 700px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.contenedor {
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: arial, sans-serif;
+  color: black;
+}
+
+.Totales{
+  display: flex;
+  background: #9A867B;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  color: #FFFDFC;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.Totales a:hover {
+  background: rgba(255, 255, 255, 0.142);
+}
+
+.form{
+  background-color: #9A867B;
+  text-align: center;
+  font-family: arial, sans-serif;
+  color: #FFFDFC;
+}
+
+.form p:hover{
+  background: rgba(255, 255, 255, 0.142);
+
+}
+
+.form input{
+  border-radius: 20px;
+  width: 200px;
+  border: solid #FFFDFC;
+}
+
+.form textarea{
+  border-radius: 20px;
+  width: 520px;
+  border: solid #FFFDFC;
+  padding-left: 5px;
+}
+
+#sendForm{
+  background-color: #9A867B;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  color: #FFFDFC;
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#sendForm:hover{
+  background: rgba(255, 255, 255, 0.142);
+
+}
+
+#deleteForm{
+  background-color: #9A867B;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  color: #FFFDFC;
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#deleteForm:hover{
+  background: rgba(255, 255, 255, 0.142);
+
+}
+
+footer {
+  background-color: #9A867B;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: #9A867B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.055);
+  position: relative;
+  left: 40%;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fin {
+  display: inline;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color:#FFFDFC;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 50px;
+  padding: 10px 0;
+  position: relative;
+  left: 10%;
+  top: 1px;
+}
